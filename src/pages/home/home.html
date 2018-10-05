@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar color='danger'>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding >
+       <ion-img src="Smec.jpg" height="120px" width="100%" alt=""></ion-img>
+      <h1> Todo Application </h1>
+      <ion-label > Add Your Todo Here! </ion-label>
+      <ion-input class="Body" type="text" [(ngModel)]="todo"></ion-input><br>
+      <button ion-button color="sucess" (click)="AddTodo()"> Add Todo </button>
+      <button ion-button color="danger" (click)="RemoveTodo()" > Remove Todo </button>
+      
+      <h1 *ngFor="let t of todolist" > {{t}} </h1>
+      <h1 *ngFor="let i of index" > {{i}} </h1>
+      
+
+      
+</ion-content>
